@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="GymMe.Layout.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Btn_Hoem" runat="server" Text="Home" OnClick="Btn_Home_Click"/>
+            <asp:Button ID="Btn_Manage" runat="server" Text="Manage Supplement" OnClick="Btn_Manage_Click"/>
+            <asp:Button ID="Btn_0rderQueue" runat="server" Text="Order Queue" OnClick="Btn_0rderQueue_Click"/>
+            <asp:Button ID="Btn_Profile" runat="server" Text="Profile" OnClick="Btn_Profile_Click"/>
+            <asp:Button ID="Btn_Report" runat="server" Text="Transaction Report" OnClick="Btn_Report_Click"/>
+            <asp:Button ID="Btn_logout" runat="server" Text="LogOut" OnClick="Btn_logout_Click"/>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
